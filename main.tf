@@ -14,9 +14,9 @@ resource "ibm_cm_offering" "cm_offering" {
 resource "ibm_cm_offering" "cm_offering" {
     catalog_id = ibm_cm_catalog.cm_catalog.id
     label = "tf_test_offering2"
-    tags = ${var.string_array_no_type}
-    test_int = ${var.int_no_type}
-    test_float = ${var.float_no_type}
-    test_bool = ${var.boolean_no_type}
-    test_map = ${var.object_no_type}
+    tags = "${var.string_array_no_type}"
+    test_int = "${var.int_no_type}"
+    test_float = "${var.float_no_type}"
+    test_bool = "${var.boolean_no_type}"
+    test_map = "${var.object_no_type}"
 }
