@@ -27,11 +27,15 @@ variable "float_with_type" {
 }
 
 variable "object_array_with_type" {
-  type = list(object)
+  type = list(object({
+              foo = string
+  }))
 }
 
 variable "object_with_type" {
-  type = object
+  type = object({
+    foo = string
+  })
 }
 
 variable "string_array_no_type" {
@@ -51,9 +55,9 @@ variable "float_no_type" {
 }
 
 variable "object_array_no_type" {
- default = [{"a":1}, {"b":2}] 
+ default = [{"foo":"bar"}, {"foo":"baz"}] 
 }
 
 variable "object_no_type" {
-  default = {"a":1}
+  default = {"foo":"bar"}
 }
