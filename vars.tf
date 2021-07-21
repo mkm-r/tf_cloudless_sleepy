@@ -34,7 +34,7 @@ variable "object_with_type" {
   type = object
 }
 
-varaible "string_array_no_type" {
+variable "string_array_no_type" {
   default = ["a", "b", "c"] 
 }
 
