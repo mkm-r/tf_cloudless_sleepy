@@ -18,16 +18,12 @@ variable "boolean_with_type" {
   type = boolean
 }
 
-varaible "string_array_no_type" {
-  default = ["a", "b", "c"] 
+variable "int_with_type" {
+  type = number
 }
 
-variable "boolean_no_type" {
-  default = false
-}
-
-variable "object_array_no_type" {
- default = [{"a":1}, {"b":2}] 
+variable "float_with_type" {
+  type = number
 }
 
 variable "object_array_with_type" {
@@ -36,6 +32,26 @@ variable "object_array_with_type" {
 
 variable "object_with_type" {
   type = object
+}
+
+varaible "string_array_no_type" {
+  default = ["a", "b", "c"] 
+}
+
+variable "boolean_no_type" {
+  default = false
+}
+
+variable "int_no_type" {
+  default = 1
+}
+
+variable "float_no_type" {
+  default = 1.1
+}
+
+variable "object_array_no_type" {
+ default = [{"a":1}, {"b":2}] 
 }
 
 variable "object_no_type" {
