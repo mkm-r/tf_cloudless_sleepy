@@ -1,17 +1,3 @@
-terraform {
-  required_providers {
-    ibm = {
-      source = "jonwoodlief/catalog"
-      version = "0.0.100"
-      #source = "IBM-Cloud/ibm"
-      #version = "1.27.1"
-    }
-  }
-}
-# Configure the IBM Provider
-provider "ibm" {
-  region = "us-south"
-}
 resource "ibm_cm_catalog" "cm_catalog" {
     label = "tf_test_offering_catalog"
     short_description = "testing terraform provider with catalog"
