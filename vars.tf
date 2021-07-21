@@ -15,7 +15,7 @@ variable "string_array_with_type" {
 }
 
 variable "boolean_with_type" {
-  type = boolean
+  type = bool
 }
 
 variable "int_with_type" {
