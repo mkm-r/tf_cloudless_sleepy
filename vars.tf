@@ -61,3 +61,64 @@ variable "object_array_no_type" {
 variable "object_no_type" {
   default = {"foo":"bar"}
 }
+
+variable "string_array_with_type_and_default_1" {
+  type = list(string)
+  default = ["a", "b", "c"]
+}
+
+variable "string_array_with_type_and_default_2" {
+  type = list(string)
+  default = [
+    "a", 
+    "b", 
+    "c"
+  ]
+}
+
+variable "boolean_with_type_and_default" {
+  type = bool
+  default = true
+}
+
+variable "int_with_type_and_default" {
+  type = number
+  default = 200
+}
+
+variable "float_with_type_and_default" {
+  type = number
+  deafult = 200.100
+}
+
+variable "object_array_with_type_and_default_1" {
+  type = list(object({
+              foo = string
+  }))
+  default = [{"foo"="bar"}]
+}
+
+variable "object_array_with_type_and_default_2" {
+  type = list(object({
+              foo = string
+  }))
+  default = [
+    {foo="bar"}
+  ]
+}
+
+variable "object_with_type_and_default_1" {
+  type = object({
+    foo = string
+  })
+  default = {foo="bar"}
+}
+
+variable "object_with_type_and_default_2" {
+  type = object({
+    foo = string
+  })
+  default = {
+    foo="bar"
+  }
+}
