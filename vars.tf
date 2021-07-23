@@ -17,7 +17,6 @@ variable "sleepy_time" {
 
 variable "string_array_with_type" {
   type = list(string)
-  default = ["a", "b"]
 }
 
 variable "boolean_with_type" {
@@ -45,9 +44,9 @@ variable "object_with_type" {
   default = {foo:"bar"} # Remove this default later
 }
 
-# variable "string_array_no_type" {
-#   default = ["a", "b", "c"] 
-# }
+variable "string_array_no_type" {
+  default = ["a", "b", "c"] 
+}
 
 variable "boolean_no_type" {
   default = false
@@ -69,10 +68,10 @@ variable "float_no_type" {
 #   default = {"foo":"bar"}
 # }
 
-# variable "string_array_with_type_and_default_1" {
-#   type = list(string)
-#   default = ["a", "b", "c"]
-# }
+variable "string_array_with_type_and_default_1" {
+  type = list(string)
+  default = ["a", "b", "c"]
+}
 
 # variable "string_array_with_type_and_default_2" {
 #   type = list(string)
