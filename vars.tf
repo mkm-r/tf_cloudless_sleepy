@@ -93,7 +93,7 @@ variable "int_with_type_and_default" {
 
 variable "float_with_type_and_default" {
   type = number
-  deafult = 200.100
+  default = 200.100
 }
 
 variable "object_array_with_type_and_default_1" {
