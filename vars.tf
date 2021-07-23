@@ -38,10 +38,8 @@ variable "float_with_type" {
 # }
 
 variable "object_with_type" {
-  type = object({
-    foo = string
-  })
-  default = {foo:"bar"} # Remove this default later
+  type = object({foo = string})
+  default = {foo:"bar"}
 }
 
 variable "string_array_no_type" {
@@ -113,12 +111,10 @@ variable "float_with_type_and_default" {
 #   ]
 # }
 
-# variable "object_with_type_and_default_1" {
-#   type = object({
-#     foo = string
-#   })
-#   default = {foo="bar"}
-# }
+variable "object_with_type_and_default_1" {
+  type = object({foo = string})
+  default = {foo="bar"}
+}
 
 # variable "object_with_type_and_default_2" {
 #   type = object({
