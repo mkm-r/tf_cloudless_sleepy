@@ -15,9 +15,9 @@ variable "sleepy_time" {
   default     = 0
 }
 
-variable "string_array_with_type" {
-  type = list(string)
-}
+# variable "string_array_with_type" {
+#   type = list(string)
+# }
 
 variable "boolean_with_type" {
   type = bool
@@ -31,21 +31,21 @@ variable "float_with_type" {
   type = number
 }
 
-variable "object_array_with_type" {
-  type = list(object({
-              foo = string
-  }))
-}
+# variable "object_array_with_type" {
+#   type = list(object({
+#               foo = string
+#   }))
+# }
 
-variable "object_with_type" {
-  type = object({
-    foo = string
-  })
-}
+# variable "object_with_type" {
+#   type = object({
+#     foo = string
+#   })
+# }
 
-variable "string_array_no_type" {
-  default = ["a", "b", "c"] 
-}
+# variable "string_array_no_type" {
+#   default = ["a", "b", "c"] 
+# }
 
 variable "boolean_no_type" {
   default = false
@@ -59,27 +59,27 @@ variable "float_no_type" {
   default = 1.1
 }
 
-variable "object_array_no_type" {
- default = [{"foo":"bar"}, {"foo":"baz"}] 
-}
+# variable "object_array_no_type" {
+#  default = [{"foo":"bar"}, {"foo":"baz"}] 
+# }
 
-variable "object_no_type" {
-  default = {"foo":"bar"}
-}
+# variable "object_no_type" {
+#   default = {"foo":"bar"}
+# }
 
-variable "string_array_with_type_and_default_1" {
-  type = list(string)
-  default = ["a", "b", "c"]
-}
+# variable "string_array_with_type_and_default_1" {
+#   type = list(string)
+#   default = ["a", "b", "c"]
+# }
 
-variable "string_array_with_type_and_default_2" {
-  type = list(string)
-  default = [
-    "a", 
-    "b", 
-    "c"
-  ]
-}
+# variable "string_array_with_type_and_default_2" {
+#   type = list(string)
+#   default = [
+#     "a", 
+#     "b", 
+#     "c"
+#   ]
+# }
 
 variable "boolean_with_type_and_default" {
   type = bool
@@ -96,34 +96,34 @@ variable "float_with_type_and_default" {
   default = 200.100
 }
 
-variable "object_array_with_type_and_default_1" {
-  type = list(object({
-              foo = string
-  }))
-  default = [{"foo"="bar"}]
-}
+# variable "object_array_with_type_and_default_1" {
+#   type = list(object({
+#               foo = string
+#   }))
+#   default = [{"foo"="bar"}]
+# }
 
-variable "object_array_with_type_and_default_2" {
-  type = list(object({
-              foo = string
-  }))
-  default = [
-    {foo="bar"}
-  ]
-}
+# variable "object_array_with_type_and_default_2" {
+#   type = list(object({
+#               foo = string
+#   }))
+#   default = [
+#     {foo="bar"}
+#   ]
+# }
 
-variable "object_with_type_and_default_1" {
-  type = object({
-    foo = string
-  })
-  default = {foo="bar"}
-}
+# variable "object_with_type_and_default_1" {
+#   type = object({
+#     foo = string
+#   })
+#   default = {foo="bar"}
+# }
 
-variable "object_with_type_and_default_2" {
-  type = object({
-    foo = string
-  })
-  default = {
-    foo="bar"
-  }
-}
+# variable "object_with_type_and_default_2" {
+#   type = object({
+#     foo = string
+#   })
+#   default = {
+#     foo="bar"
+#   }
+# }
