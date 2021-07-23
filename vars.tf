@@ -17,7 +17,7 @@ variable "sleepy_time" {
 
 variable "string_array_with_type" {
   type = list(string)
-  default = ["a", "b"] # remove default later
+  default = ["a", "b"]
 }
 
 variable "boolean_with_type" {
