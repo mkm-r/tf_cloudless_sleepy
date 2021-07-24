@@ -17,18 +17,22 @@ variable "sleepy_time" {
 
 variable "string_array_with_type" {
   type = list(string)
+  default = ["us-west", "us-south"]
 }
 
 variable "boolean_with_type" {
   type = bool
+  default = true
 }
 
 variable "int_with_type" {
   type = number
+  default = 121233
 }
 
 variable "float_with_type" {
   type = number
+  default = 34.90900
 }
 
 # variable "object_array_with_type" {
